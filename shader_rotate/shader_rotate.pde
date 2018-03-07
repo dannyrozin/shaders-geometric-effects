@@ -1,4 +1,4 @@
-// The world pixel by pixel 2017
+// The world pixel by pixel 2018
 // Daniel Rozin
 // use fragment shader to do a blur on live video
 
@@ -11,7 +11,7 @@ PShader myFragShader;
 
 void setup() {
   size(1280, 960, P2D);
-  frameRate(400);
+  frameRate(100);
   myFragShader = loadShader("FragShaderRotate.glsl");
   video = new Capture(this,width, height);
   video.start();
