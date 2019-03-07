@@ -1,6 +1,6 @@
-// The world pixel by pixel 2018
+// The world pixel by pixel 2019
 // Daniel Rozin
-// use fragment shader to do a blur on live video
+// use fragment shader to do a flip live video
 
 
 import processing.video.*;
@@ -21,12 +21,7 @@ void captureEvent(Capture c) {
 }
 
 void draw() {
-  angle+=0.01;
   image(video,0,0);
-  float x = map(mouseX, 0,width, 0,1);
-  float y = map(mouseY, 0,height, 0,1);
-  myFragShader.set("mouseX",x);
-  myFragShader.set("mouseY",y);
   shader(myFragShader);
   println (frameRate);
 }

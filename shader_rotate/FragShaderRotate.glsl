@@ -14,7 +14,7 @@ uniform float angle;
 
 void main() {
 
-	float distanceToMouse =  10*((mouseX-vertTexCoord.x)*(mouseX-vertTexCoord.x)+(mouseY-vertTexCoord.y)*(mouseY-vertTexCoord.y));   // calculating thedistance fromthe mouse
+	float distanceToMouse =  10*((mouseX-vertTexCoord.x)*(mouseX-vertTexCoord.x)+(mouseY-vertTexCoord.y)*(mouseY-vertTexCoord.y));   // calculating the distance from the mouse
 	float cosangle = cos(distanceToMouse+angle);           					// calculating the cosine of our angle + the distance
 	float sinangle = sin(distanceToMouse+angle);							// calculating the sine of our angle + the distance
 	//float cosangle = cos(angle);           					            // change to these for normal rotate
