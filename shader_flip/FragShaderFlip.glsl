@@ -1,3 +1,7 @@
+// The world pixel by pixel 2020
+// Daniel Rozin
+//  fragment shader to do a flip
+
 #ifdef GL_ES
 precision mediump float;
 precision mediump int;
